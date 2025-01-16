@@ -368,7 +368,7 @@ Currency_of_country = {
 
 # Start function
 def Start():
-    Choice_option = input("Entry your choice (Convert / Research): ") #Entry the choice of the option
+    Choice_option = input("Entry your choice (Convert / Research / Exit): ") #Entry the choice of the option
 
     #If "Convert", bring in the Convert function
     if (Choice_option=="Convert"):
@@ -377,6 +377,9 @@ def Start():
     #If "Research", bring in the Currency function
     if (Choice_option=="Research"):
         Currency_research()
+
+    if (Choice_option=="Exit"):
+        exit()   #Exit the code
 
 # Convert function
 def Convert():
